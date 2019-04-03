@@ -1,0 +1,59 @@
+groups:
+  aucun:
+    power: 0
+    permissions:
+    - pcm.event.command.msg.*
+    - pcm.event.command.lag
+    - minecraft.command.trigger
+    - bukkit.command.trigger
+  organisateur:
+    power: 1
+    inheritance: "default"
+    permissions:
+    - pcm.anticheat
+    - pcm.event.command.warp
+    - pcm.event.command.tpb
+    - pcm.event.command.fly
+    - pcm.event.command.tppos
+    - pcm.event.command.killb
+    - pcm.event.command.speed
+    - pcm.event.command.msg.*
+    - pcm.event.command.warp.*
+    - pcm.event.command.broadcast
+    - pcm.event.command.gamemodeb
+    - pcm.event.command.vanish
+    - pcm.event.command.config
+    - pcm.event.command.heal
+    - bukkit.command.clear
+    - minecraft.command.clear
+    - bukkit.command.time
+    - minecraft.command.time
+  animateur:
+    power: 2
+    inheritance: "organisateur"
+    permissions:
+    - pcm.event.*
+    - minecraft.command.*
+    - worldedit.*
+    - essentials.*
+    - voxelsniper.*
+    - worldguard.*
+  responsable:
+    power: 3
+    inheritance: "default"
+    permissions:
+    - pcm.*
+    - minecraft.command.*
+    - worldedit.*
+    - voxelsniper.*
+    - essentials.*
+    - permissions.*
+  administrateur:
+    power: 4
+    inheritance: "responsable"
+    permissions:
+    - pcm.*
+    - worldedit.*
+    - voxelsniper.*
+    - permissions.*
+default: "aucun"
