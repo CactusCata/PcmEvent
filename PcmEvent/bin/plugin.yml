@@ -1,0 +1,162 @@
+name: PcmEvent
+version: 2.5.3
+author: CactusCata
+main: fr.cactuscata.pcmevent.PcmEvent
+description: "Plugin qui permet tout les utilitaires presents sur le monde event."
+website: https://pleasecraftme.fr/
+commands:
+
+  broadcast:
+    aliases: [bcast]
+    description: Permet d'envoyer une message a tous les joueurs actuellement connectes.
+    usage: /<command> [message]
+    permission: pcm.event.command.broadcast 
+    
+  spawn:
+    description: Permet au joueur qui execute la commande d'etre teleporter aux coordonees du spawn.
+    usage: /<command>
+        
+  setrank:
+    description: Permet de mettre un grade a un joueur.
+    usage: /<command> [joueur] [rank] [motdepasse]
+    permission: pcm.event.command.setstaff
+        
+  warp:
+    aliases: [wp]
+    description: Permet de se teleporter aux coordonees d'un warp.
+    usage: /<command> [warp]
+        
+  setwarp:
+    description: Permet d'ajouter un warp.
+    usage: /<command> [warp]
+    permission: pcm.event.command.warp.setwarp
+        
+  warps:
+    description: Renvois au joueur la liste des noms de tous les warps.
+    usage: /<command>
+    permission: pcm.event.command.warp.warps
+        
+  delwarp:
+    description: Permet de supprimer un warp.
+    usage: /<command> [warp]
+    permission: pcm.event.command.warp.delwarp
+        
+  warpinfo:
+    description: Permet de recuperer les coordonees d'un warp.
+    usage: /warpinfo [warp]
+    permission: pcm.event.command.warp.warpinfo
+        
+  socialspy:
+    aliases: [spy]
+    description: Permet d'acceder aux messages prives des joueurs.
+    permission: pcm.event.command.spy.socialspy
+    usage: /<command>
+        
+  spylist:
+    description: Permet de voir les personnes qui ont executes la commande /socialspy.
+    permission: pcm.event.command.spy.list
+    usage: /<command>
+        
+  msg:
+    aliases: [w, m]
+    description: Permet d'envoyer un message prive a un joueur.
+    permission: pcm.event.command.msg.send
+    usage: /<command> [joueur] [message]
+        
+  r:
+    description: Permet de repondre au message d'un joueur.
+    permission: pcm.event.command.msg.rep
+    usage: /<command> [message]
+        
+  speed:
+    description: Permet de donner au joueur qui execute la commande une vitesse de vol et de sol.
+    permission: pcm.event.command.speed
+    usage: /<command> [vitesse]
+        
+  killb:
+    description: Permet de tuer un joueur avec une raison qui est envoye a tous les joueurs actuellements connectes.
+    permission: pcm.event.command.killb
+    usage: /<command> [joueur] [raison]
+        
+  tppos:
+    description: Permet de teleporter un joueur a des coordonnees.
+    permission: pcm.event.command.tppos
+    usage: /<command> [joueur] [x] [y] [z]
+        
+  tpb:
+    description: Permet de teleporter un joueur a un autre joueur.
+    permission: pcm.event.command.tpb
+    usage: /<command> [joueur] [joueur]
+        
+  fly:
+    description: Permet de voler.
+    permission: pcm.event.command.fly
+    usage: /<command>
+        
+  gamemodeb:
+    aliases: [gmb]
+    description: Permet de permuter entre le gamemode aventure et le gamemode survie.
+    permission: pcm.event.command.gamemodeb
+    usage: /<command>
+        
+  vanish:
+    description: Permet de se cacher des autres joueurs.
+    permission: pcm.event.command.vanish
+    usage: /<command>
+        
+  config:
+    description: Permet de modifier les valeurs contenu dans la configuration du plugin.
+    permission: pcm.event.command.config
+    usage: /<command>
+        
+  lag:
+    aliases: [ping]
+    description: Recupere les tps du serveur ainsi que le ping du joueur et lui renvois.
+    permission: pcm.event.command.lag
+    usage: /<command>
+        
+  heal:
+    description: Permet au joueur qui a execute la commande de recuperer tous ses points de vie ainsi que sa saturation.
+    permission: pcm.event.command.heal
+    usage: /<command>
+    
+  openinv:
+    description: Permet d'acceder et de modifier l'inventaire d'un joueur.
+    permission: pcm.event.command.inv.openinv
+    usage: /<command> [joueur]
+        
+  openender:
+    description: Permet d'acceder et de modifier le coffre du neant d'un joueur.
+    permission: pcm.event.command.inv.openender
+    usage: /<command> [joueur]
+    
+  hitdelay:
+    description: Permet de modifier le delais minimum que le joueur doit attendre avant de pouvoir se faire frapper a nouveau.
+    permission: pmc.event.command.delayHit
+    usage: /<command> [joueur] [number]
+    
+  experience:
+    description: Permet d'ajouter de l'experience a un joueur.
+    permission: pcm.event.command.experience
+    usage: /<command> [joueur] [number]
+    
+  hologram:
+    aliases: [holo, holograms]
+    description: Permet de creer, ajouter supprimer ou modifier des hologrammes.
+    permission: pcm.event.command.hologram
+    usage: /<command> [action]
+    
+  physic:
+    description: Permet de desactiver a la maniere d'un flip flop la physique du monde.
+    permission: pcm.event.command.physic
+    usage: /<command> [action]
+    
+  lol:
+    aliases: [fun]
+    description: Permet d'obtenir un maximum de funitude.
+    usage: /<command> [amount]
+  
+  permissions:
+    aliases: [pex]
+    description: Permet de modifier les caracteristiques d'un groupe.
+    usage: /<command> [action]

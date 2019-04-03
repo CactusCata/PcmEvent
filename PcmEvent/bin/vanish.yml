@@ -1,0 +1,8 @@
+Vanish:
+  CanDropItems: true
+  CanBreakBlock: true
+  CanPlaceBlock: true
+  AllowXP: false
+  CanPickupItems: false
+  CanHitPlayersWithVanish: false
+  CanSpeak: true

@@ -1,0 +1,9 @@
+bienvenue:
+  location: "world, -0.324, 67.299, 6.758"
+  lines:
+  - '&9Bienvenue'
+  - '&e&lau monde &2&lEvent !'
+tloc:
+  location: world, -0.720, 69.491, 131.562
+  lines:
+  - '&2&lProchainement'
